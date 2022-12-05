@@ -19,6 +19,6 @@ Template Post Type: header
     <div class="container">
         <header class="header">
             <nav class="menu header__menu">
-                <?php get_template_part('template-parts/menu__list'); ?>
+                <?php get_sidebar(); ?>
             </nav>
         </header>
