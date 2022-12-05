@@ -92,10 +92,39 @@
      scroll-behavior: auto !important;
    }
  }
+.logo{
+  height: 50px;
+  width: 50px;
+  background: url(https://img2.freepng.ru/20180511/xte/kisspng-wordpress-logo-computer-icons-5af5d407e4a404.2768761215260600399365.jpg);
+  background-position: 50% 50%;
+    background-repeat: no-repeat;  
+}
+
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header{
+  height: 80px;
+  background: #797979;
+  margin-bottom: 10px;
+}
+.header ul{
+  display: inline-flex;
+}
+.movie__wrapper{
+  display: inline-flex;
+}
 
 .movieItem{
   width: 250px;
+  margin: 0 10px 10px 10px;
   border: 1px solid rgba(61, 61, 61, 0.918);
+  border-radius: 6px;
   padding: 5px;
 }
 

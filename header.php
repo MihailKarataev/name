@@ -19,6 +19,12 @@ Template Post Type: header
     <div class="container">
         <header class="header">
             <nav class="menu header__menu">
+                <div class="logo"></div>
                 <?php get_sidebar(); ?>
+                <div class="searchbar">
+                    <span>Логин:<input type="text"></span>
+                    <span>Пароль:<input type="password"></span>
+                    <button>Войти</button>
+                </div>
             </nav>
         </header>
