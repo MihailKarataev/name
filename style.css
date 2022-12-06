@@ -135,7 +135,7 @@
   text-decoration: none;
   color: black;
   font-size: 29px;
-  padding: 22px;
+  padding: 0 22px;
 }
 .menu-item a:hover{
   background: #00ffff;
@@ -176,7 +176,7 @@
 }
 
 .movieItem{
-  width: 260px;
+  width: 274px;
   margin: 0 10px 10px 10px;
   border: 1px solid rgba(61, 61, 61, 0.918);
   border-radius: 6px;
