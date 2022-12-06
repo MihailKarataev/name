@@ -11,20 +11,20 @@ Template Post Type: header
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php the_title(); ?></title>
+    
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <div class="container">
         <header class="header">
-            <nav class="menu header__menu">
+            <div class="menu header__menu">
                 <div class="logo"></div>
                 <?php get_sidebar(); ?>
-                <div class="searchbar">
-                    <span>Логин:<input type="text"></span>
-                    <span>Пароль:<input type="password"></span>
+                <div class="authbar">
+                    <div class="authbar__text"><p>Логин:</p><input type="text"></div>
+                    <div class="authbar__text"><p>Пароль:</p><input type="password"></div>
                     <button>Войти</button>
                 </div>
-            </nav>
+            </div>
         </header>

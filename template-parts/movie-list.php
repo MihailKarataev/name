@@ -7,26 +7,26 @@
         ?>
 
     <div itemscope itemtype="https://schema.org/Movie" class="movieItem">
-        <div itemprop="name" class="movieItem__title">
-            <a href="<?php the_permalink(); ?>"> <?php print_r(implode($myMeta["title"]));?></a>
+        <div class="movieItem__title">
+            <a itemprop="name" href="<?php the_permalink(); ?>"> <?php print_r(implode($myMeta["title"]));?></a>
         </div>
-        <div itemprop="image" class='movie__item__image'>
-            <img src="<?php print_r(implode($myMeta["photo_URL"]));?>">
+        <div itemprop="image" class='movieItem__image'>
+            <?php echo wp_get_attachment_image( get_field('thumbnail'), 'medium' ); ?>
         </div>
-        <div itemprop="director" class="movieItem__title">
-            <p> Режиссер: <?php print_r(implode($myMeta["movie-director"]));?></p>
+        <div class="movieItem__title">
+            <p> Режиссер:</p><p itemprop="director"> <?php print_r(implode($myMeta["movie-director"]));?></p>
         </div>
-        <div itemprop="year-of-issue" class="movieItem__title">
-            <p> Год выпуска: <?php print_r(implode($myMeta["year-of-issue"]));?></p>
+        <div class="movieItem__title">
+            <p> Год выпуска:</p><p itemprop="year-of-issue"> <?php print_r(implode($myMeta["year-of-issue"]));?></p>
         </div>
-        <div itemprop="genre" class="movieItem__title">
-            <p> Жанр: <?php print_r(implode($myMeta["genre"])); ?></p>
+        <div class="movieItem__title">
+            <p> Жанр:</p><p itemprop="genre"> <?php print_r(implode($myMeta["genre"])); ?></p>
         </div>
-        <div itemprop="aggregateRating" class="movieItem__title">
-            <p> Средняя оценка: <?php print_r(implode($myMeta["average-mark"]));?>/10</p>
+        <div class="movieItem__title">
+            <p> Средняя оценка:</p><p itemprop="aggregateRating"> <?php print_r(implode($myMeta["average-mark"]));?></p><p>/10</p>
         </div>
-        <div itemprop="text" class="movieItem__description">
-            <p> Описание: <?php the_content(); ?></p>
+        <div class="movieItem__description">
+            <p> Описание:</p><p itemprop="text"> <?php the_excerpt(); ?></p>
         </div>
     </div>
 

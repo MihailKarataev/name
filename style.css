@@ -93,11 +93,13 @@
    }
  }
 .logo{
-  height: 50px;
-  width: 50px;
-  background: url(https://img2.freepng.ru/20180511/xte/kisspng-wordpress-logo-computer-icons-5af5d407e4a404.2768761215260600399365.jpg);
+  height: 40px;
+  width: 208px;
+  background: url(https://avatars.mds.yandex.net/get-lpc/1220100/f50f13e4-4a14-44fa-ae97-b6af3bad5560/orig);
   background-position: 50% 50%;
-    background-repeat: no-repeat;  
+  background-repeat: no-repeat;  
+  background-size: cover;
+  margin: 10px;
 }
 
 
@@ -108,26 +110,85 @@
   padding: 0 10px;
 }
 
+/*header*/
 .header{
+  display: flex;
   height: 80px;
   background: #797979;
   margin-bottom: 10px;
 }
+
 .header ul{
   display: inline-flex;
+}
+
+/*доработка стандартных стилей меню*/
+.menu{
+  align-items: center;
+}
+
+.menu-item{
+  list-style-type: none;
+}
+
+.menu-item a{
+  text-decoration: none;
+  color: black;
+  font-size: 29px;
+  padding: 22px;
+}
+.menu-item a:hover{
+  background: #00ffff;
+}
+
+.sub-menu{
+  display: none !important;
+}
+.menu-item:hover .sub-menu{
+  display: block !important;
+  position: absolute;
+  background: #6e6e6eda;
+  z-index: 1;
+
+}
+
+.menu-item:hover{
+  background: #333;
+  color: #cbcbcb;
+}/*доработка стандартных стилей меню*/
+
+.header__menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.authbar{
+  width: 300px;
+}
+.authbar__text{
+  display: inline-flex;
+  height: 20px;
+
 }
 .movie__wrapper{
   display: inline-flex;
 }
 
 .movieItem{
-  width: 250px;
+  width: 260px;
   margin: 0 10px 10px 10px;
   border: 1px solid rgba(61, 61, 61, 0.918);
   border-radius: 6px;
   padding: 5px;
 }
 
-.movieItem__Title{
+.movieItem__title{
   color: #333;
+  display: inline-flex;
+}
+
+.movieItem__image img{
+  width: 100%;
+  margin: 0 auto;
 }
